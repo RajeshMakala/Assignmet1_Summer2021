@@ -98,6 +98,9 @@ namespace Assignment1_Summer2021
                 char[] a = moves.ToCharArray();
                 int x = 0;
                 int y = 0;
+
+                //considering a two dimensional space with X and Y coordinates.
+                //If X and Y co-ordinates becomes zero after all the moves, then it is considered to be in it's original position.
                 foreach(char i in a)
                 {
                     if (i =='R')
@@ -151,6 +154,7 @@ Note: Use of String function (Contains) and hasmap is not allowed, think of othe
         {
             try
             {
+                //Below logic navigates through all the characters of the provided string and returns true if all the alphabets are found.
                 string alphabets = "abcdefghijklmnopqrstuvwxyz";
                 int count = 0;
 
@@ -198,6 +202,8 @@ Note: Use of String function (Contains) and hasmap is not allowed, think of othe
         {
             try
             {
+                //Using nested loops to identify the good pairs. Each number is compared to numbers with higher index,
+                //if they are matching counter will be incremented.
                 int count = 0;
                 for(int i=0; i<arr.Length-1; i++)
                 {
@@ -247,6 +253,8 @@ Note: Use of String function (Contains) and hasmap is not allowed, think of othe
         {
             try
             {
+                //using two loops; one will sum the numbers from lower to higher index,
+                //other loop will sum the numbers from higher to lower indexes. If both are matching, correponding index will be returned.
                 for(int i=1; i < nums.Length-1; i++)
                 {
                     double leftSum = 0;
@@ -301,6 +309,7 @@ Note: Use of String function (Contains) and hasmap is not allowed, think of othe
         {
             try
             {
+                //both words are split into char arrays then, each character is appended into StringBuilder one after the other.
                 int temp = 0;
                 if (word1.Length > word2.Length)
                 {
@@ -358,6 +367,8 @@ Note: Use of String function (Contains) and hasmap is not allowed, think of othe
         {
             try
             {
+                //Sentence is split into words, if the word doesn't contain Vowels as a starting letter,
+                //then first letter is moved to end of the word. For all the words, ma and a(based on index of the word) is appended
                 string[] words = sentence.Split();
                 StringBuilder output = new StringBuilder();
                 StringBuilder sb_temp = new StringBuilder();
