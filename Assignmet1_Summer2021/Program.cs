@@ -41,15 +41,14 @@ namespace Assignment1_Summer2021
             
             //Question 3:
 
-            int[] arr = { 1, 2, 3};
+            int[] arr = { 1, 2, 3, 1, 1, 3 };
             int gp = NumIdenticalPairs(arr);
             Console.WriteLine("Q3:");
             Console.WriteLine("The number of IdenticalPairs in the array are {0}:", gp);
             
             
             //Question 4:
-            int[] arr1 = { 1, 1
-                    , 1 };
+            int[] arr1 = { 1, 7, 3, 6, 5, 6 };
             Console.WriteLine("Q4:");
             int pivot = PivotIndex(arr1);
             if (pivot > 0)
