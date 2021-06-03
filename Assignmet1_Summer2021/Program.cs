@@ -361,6 +361,7 @@ Note: Use of String function (Contains) and hasmap is not allowed, think of othe
         /// </summary>
         /// <param name="sentence"></param>
         /// <returns> string</returns>
+        /// Return the final sentence 
        */
         private static string ToGoatLatin(string sentence)
         {
@@ -368,7 +369,7 @@ Note: Use of String function (Contains) and hasmap is not allowed, think of othe
             {
                 //Sentence is split into words, if the word doesn't contain Vowels as a starting letter,
                 //then first letter is moved to end of the word. For all the words, ma and a(based on index of the word) is appended
-                string[] words = sentence.Split();
+                string[] words = sentence.Trim().Split();
                 StringBuilder output = new StringBuilder();
                 StringBuilder sb_temp = new StringBuilder();
 
